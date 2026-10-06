@@ -9,16 +9,19 @@ Kabuda（iOS 相机 App，Bundle `com.kabuda.app`）的**隐私政策**与**用�
 两个页面都是**中英双语单文件**：按浏览器语言（`navigator.language`）自动显示，顶部按钮可手动切换，
 也支持 `?lang=zh` / `?lang=en` 覆盖。App 内中英文指向**同一个 URL**。
 
-## 一、发布前必须替换的占位
+## 一、主体信息（已填）
 
-全文搜索 `TODO` 或页面上黄色高亮块：
+- 中文：**王港锋（GANGFENG WANG）**，个人开发者
+- 英文：**GANGFENG WANG**，an individual developer
+- 邮箱：`vnues.wgf@gmail.com`
 
-1. **主体姓名**（`privacy/` 与 `terms/` 各两处，中英各一处）
-   ⚠️ 必须与 Apple 后台（App Store Connect → 商务/用户信息）显示的 **legal entity name 逐字一致**。
-   个人主体 = 注册开发者账号时存档的那个拼音写法，**不要**按日常习惯拼写。
-2. **生效日期 / 更新日期**（默认写了 2026-10-06）。
-3. **联系邮箱**（默认 `vnues.wgf@gmail.com`，中英一起改）。
-4. 如需要，补充联系地址（中文页第一节、英文页第 1 节附近）。
+⚠️ 与 Apple 后台（App Store Connect → 用户信息 → Legal Entity Name）**逐字一致**，改之前先回后台核对。
+
+## 一·补、发布前仍需核对的项
+
+1. **生效日期 / 更新日期**（默认写了 `2026-10-06`，实际以提审日为准）。
+2. **联系邮箱**（默认 `vnues.wgf@gmail.com`，中英一起改）。
+3. 如需要，补充联系地址（各页「联系我们 / Contact us」一节）。
 
 ## 二、开 Pages（一次性）
 
