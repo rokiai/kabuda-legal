@@ -23,13 +23,17 @@ Kabuda（iOS 相机 App，Bundle `com.kabuda.app`）的**隐私政策**与**用�
 2. **联系邮箱**（默认 `vnues.wgf@gmail.com`，中英一起改）。
 3. 如需要，补充联系地址（各页「联系我们 / Contact us」一节）。
 
+- 仓库：<https://github.com/rokiai/kabuda-legal>
+- remote：`git@github.com-rokiai:rokiai/kabuda-legal.git`（本机 `~/.ssh/config` 里 `github.com-rokiai` 这个别名把 rokiai 的钥匙钉死，
+  默认的 `github.com` 走的是另一个账号，直接 push 会 `Permission denied`。）
+
 ## 二、开 Pages（一次性）
 
 1. 本仓库必须是 **Public**（免费账号的私有仓开不了 Pages ⇒ 审核员打不开 = 当缺失）。
 2. GitHub 仓库页 → `Settings` → `Pages` → Source 选 **Deploy from a branch** → Branch `main`、目录 `/ (root)` → Save。
 3. 1–2 分钟后页面顶部出现绿色提示，得到：
-   - `https://<用户名>.github.io/kabuda-legal/privacy/`
-   - `https://<用户名>.github.io/kabuda-legal/terms/`
+   - 隐私政策：<https://rokiai.github.io/kabuda-legal/privacy/>
+   - 用户协议：<https://rokiai.github.io/kabuda-legal/terms/>
 
 ⛔ 不要把 `raw.githubusercontent.com` 或仓库 blob 页面当正式链接（前者是 text/plain，且在大陆访问不稳）。
 
