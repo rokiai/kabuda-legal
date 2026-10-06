@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--
+  Kabuda 隐私政策（中英双语，同一 URL）
+  ─────────────────────────────────────────────────────────────
+  ⚠️ 发布前必须替换的占位（全文搜索 TODO 或黄色高亮块）：
+     1) 主体姓名 —— 必须与 Apple 后台「legal entity name」**逐字一致**（个人主体 = 注册开发者账号时存档的拼音写法）。
+     2) 生效日期 / 更新日期。
+     3) 联系邮箱（默认 vnues.wgf@gmail.com，如需更换请中英一起改）。
+  ✅ 仓库必须 Public，Pages 才对外可见（免费账号的私有仓开不了 Pages）。
+-->
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 · Kabuda</title>
+<style>
+  :root { --fg:#1c1c1e; --muted:#6b6b70; --line:#e5e5ea; --bg:#ffffff; --accent:#FE8E1D; --warn:#fff4d6; --warnline:#e0a800; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.75 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", Arial, sans-serif; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 72px; }
+  h1 { font-size: 26px; font-weight: 600; margin: 0 0 4px; }
+  h2 { font-size: 19px; font-weight: 600; margin: 34px 0 10px; padding-top: 18px; border-top: 1px solid var(--line); }
+  h3 { font-size: 16px; font-weight: 600; margin: 22px 0 6px; }
+  p, li { margin: 8px 0; }
+  ul { padding-left: 22px; }
+  .meta { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+  .lang { display:flex; gap:8px; margin: 18px 0 6px; }
+  .lang button { font: inherit; font-size:14px; padding:6px 14px; border-radius:999px;
+                 border:1px solid var(--line); background:#f6f6f7; color:var(--fg); cursor:pointer; }
+  .lang button[aria-pressed="true"] { background:var(--accent); border-color:var(--accent); color:#fff; }
+  .todo { background: var(--warn); border-left: 4px solid var(--warnline); padding: 10px 14px; border-radius: 6px; }
+  a { color: #1a6fc4; }
+  .foot { margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  [data-lang] { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="lang" role="group" aria-label="语言 / Language">
+    <button type="button" data-set="zh">简体中文</button>
+    <button type="button" data-set="en">English</button>
+  </div>
+
+  <!-- ========================= 中文 ========================= -->
+  <div data-lang="zh">
+    <h1>隐私政策</h1>
+    <div class="meta">Kabuda（「本应用」）· 更新日期：2026-10-06 · 生效日期：2026-10-06</div>
+
+    <p>本页面说明本应用在收集、使用与披露个人信息方面的做法。<strong>简而言之：我们原则上不收集您的个人信息</strong>——Kabuda 是一款相机应用，您的作品与数据都保存在您设备的本地存储中。</p>
+
+    <h2>一、安全性</h2>
+    <p>本应用没有自有服务器，也不会将您的作品或数据上传到我们这里。</p>
+    <h3>1. 我们不会上传您的照片和视频</h3>
+    <p>您拍摄、导入或编辑的所有照片与视频都保存在手机本地，我们不会上传、存储或分析它们。</p>
+    <h3>2. 我们不会分析或收集人脸等生物特征数据</h3>
+    <p>本应用可能在设备本地进行取景辅助（如对焦、构图辅助线）所需的画面分析，这类处理<strong>完全在您的设备上完成</strong>，产生的中间数据不会离开设备、也不会被用于识别您的身份。</p>
+    <h3>3. 我们没有账号注册系统</h3>
+    <p>Kabuda 不提供账号注册与登录，因此我们不存储任何账号类个人信息（如姓名、手机号、邮箱、密码）。</p>
+
+    <h2>二、应用权限的使用</h2>
+    <p>以下列出本应用可能申请的系统权限及用途。相册、相机、麦克风、位置等权限<strong>均不会默认开启</strong>，只有在您明确授权后才会启用；您可以随时在系统设置中变更或撤回授权。撤回后，相关功能将无法使用，但应用的其余部分仍可正常运行。</p>
+    <h3>1. 相册权限</h3>
+    <p>用于将您拍摄的照片与视频保存到系统相册，以及读取相册中的照片进行编辑。若您拒绝授权，拍摄后的作品将无法保存到系统相册，您也无法编辑相册中已有的照片。</p>
+    <h3>2. 相机权限</h3>
+    <p>用于拍摄照片与视频。若您拒绝授权，您将无法拍摄。</p>
+    <h3>3. 麦克风权限</h3>
+    <p>用于在录制视频时收录声音。若您拒绝授权，您录制的视频将没有声音。</p>
+    <h3>4. 位置权限（可选）</h3>
+    <p>用于在您主动开启「定位」后，把拍摄地点写入视频文件信息。我们<strong>不会主动请求</strong>位置权限；若您不开启，本应用不会获取您的位置。</p>
+    <h3>变更或撤回权限</h3>
+    <p>请在 iOS 的「设置」应用中找到 <strong>Kabuda</strong> 进行修改。</p>
+
+    <h2>三、信息收集与使用</h2>
+    <h3>1. 第三方 SDK</h3>
+    <p>本应用<strong>未集成任何第三方统计、广告或数据分析 SDK</strong>，不含广告追踪，不读取广告标识符（IDFA），也不做跨应用追踪。</p>
+    <h3>2. 购买与订阅</h3>
+    <p>本应用内的购买（自动续期订阅与一次性买断）全部通过 <strong>Apple App Store</strong> 完成，由 Apple 按其一贯流程处理付款、续期与退款。我们不会收到您的银行卡号、账户密码等支付信息；我们仅能通过 Apple 提供的接口获知某笔交易是否有效。</p>
+    <h3>3. 应用内跳转</h3>
+    <p>本应用可能提供跳转到 App Store 页面的入口（例如查看开发者其他作品）。该跳转由 iOS 系统处理，跳转之后的行为适用 Apple 的隐私政策。</p>
+    <h3>4. 电子邮件反馈</h3>
+    <p>当您主动向我们发送反馈邮件时，邮件中会包含您的邮箱地址、设备型号、系统版本，以及您选择附上的日志或截图。这些信息仅用于与您沟通并改进本应用，不会与第三方共享，也不会用于营销。</p>
+    <h3>5. 其他网站的链接</h3>
+    <p>本应用可能包含指向其他网站的链接。这些外部网站并非由我们运营，我们无法控制其内容与隐私做法，也不对此承担责任。请您自行查阅其隐私政策。</p>
+
+    <h2>四、数据存储与保留</h2>
+    <p>您的照片、视频与应用设置均保存在您的设备本地（含本应用自建的归档目录）。我们没有云端备份，也没有回收站：您在应用内删除内容，或卸载本应用，相关数据可能被永久删除且无法恢复。请您自行做好备份（例如把作品保存到系统相册）。</p>
+
+    <h2>五、您的权利</h2>
+    <p>根据您所在地的适用法律，您可能享有访问、更正、删除您的个人信息，或反对、限制我们处理您个人信息的权利。由于本应用不使用账号系统、且几乎不掌握可识别到具体个人的信息，多数情况下我们无法也无法需要定位到某个具体用户；对于您主动提供给我们的信息（例如反馈邮件），您可以通过下方联系方式提出请求，我们会在合理期限内处理。</p>
+    <p>您也可以随时通过关闭相应系统权限、清除应用数据或卸载本应用，来停止任何数据的继续留存。</p>
+
+    <h2>六、儿童隐私</h2>
+    <p>本应用适合 4 岁及以上用户使用。我们不会有意收集儿童个人信息。若您未满 14 周岁，请在父母或监护人的陪同下阅读本政策并决定是否使用本应用；如我们发现误收集了儿童信息，会尽快删除。</p>
+
+    <h2>七、政策更新</h2>
+    <p>我们可能不时更新本政策。更新后的版本会发布在本页面并即时生效；若涉及重大变更，我们会在应用内提示。建议您定期查阅本页面。</p>
+
+    <h2>八、联系我们</h2>
+    <p>如您对本政策有任何疑问或建议，请通过电子邮件与我们联系：</p>
+    <p><a href="mailto:vnues.wgf@gmail.com">vnues.wgf@gmail.com</a></p>
+
+    <!-- TODO 发布前替换：主体姓名必须与 Apple 后台 legal entity 逐字一致 -->
+    <p class="todo"><strong>待填写：</strong>运营主体姓名【<span style="color:#a35b00">请填写与 Apple 后台 legal entity 逐字一致的个人姓名</span>】；如适用，一并填写联系地址。</p>
+  </div>
+
+  <!-- ========================= English ========================= -->
+  <div data-lang="en">
+    <h1>Privacy Policy</h1>
+    <div class="meta">Kabuda (the “App”) · Last updated: 2026-10-06 · Effective: 2026-10-06</div>
+
+    <p>This page explains how the App collects, uses and discloses personal information. <strong>In short: we do not collect your personal information.</strong> Kabuda is a camera app — your photos, videos and settings stay on your device.</p>
+
+    <h2>1. Security</h2>
+    <p>The App has no server of its own. Your work is never uploaded to us.</p>
+    <h3>1.1 We do not upload your photos or videos</h3>
+    <p>Everything you capture, import or edit is stored locally on your device. We do not upload, store or analyse it.</p>
+    <h3>1.2 We do not analyse or collect facial or biometric data</h3>
+    <p>The App may analyse the live view on-device for shooting assistance (focus, composition guides). This processing happens <strong>entirely on your device</strong>; the intermediate data never leaves your device and is never used to identify you.</p>
+    <h3>1.3 There is no account system</h3>
+    <p>Kabuda offers no sign-up or login, so we store no account information (name, phone number, email address or password).</p>
+
+    <h2>2. App permissions</h2>
+    <p>Below are the system permissions the App may request and why. Photos, Camera, Microphone and Location are <strong>never enabled by default</strong> — they are used only after you grant them, and you may change or withdraw them at any time in iOS Settings. Withdrawing a permission disables the related feature; the rest of the App keeps working.</p>
+    <h3>2.1 Photos</h3>
+    <p>To save the photos and videos you capture to your system photo library, and to read existing photos for editing. Without it, your work cannot be saved to the library and you cannot edit existing photos.</p>
+    <h3>2.2 Camera</h3>
+    <p>To capture photos and videos. Without it you cannot shoot.</p>
+    <h3>2.3 Microphone</h3>
+    <p>To record sound while shooting video. Without it your videos will have no audio.</p>
+    <h3>2.4 Location (optional)</h3>
+    <p>Used only if you turn on the Location option, to write the shooting location into the video file. We <strong>never request</strong> location permission on our own; if you leave it off, the App does not access your location.</p>
+    <h3>Changing or withdrawing permissions</h3>
+    <p>Open iOS <strong>Settings</strong> and find <strong>Kabuda</strong>.</p>
+
+    <h2>3. Information collection and use</h2>
+    <h3>3.1 Third-party SDKs</h3>
+    <p>The App includes <strong>no third-party analytics, advertising or data-mining SDK</strong>. There is no ad tracking, the advertising identifier (IDFA) is not read, and no cross-app tracking is performed.</p>
+    <h3>3.2 Purchases and subscriptions</h3>
+    <p>All purchases (auto-renewable subscriptions and one-time unlocking) are made through the <strong>Apple App Store</strong>. Apple handles payment, renewal and refunds. We never receive your card number, account password or similar payment data; we only learn whether a transaction is valid through Apple’s interfaces.</p>
+    <h3>3.3 Outbound links</h3>
+    <p>The App may offer a link to App Store pages (for example, the developer’s other apps). Such navigation is handled by iOS; Apple’s privacy policy applies once you leave the App.</p>
+    <h3>3.4 Email feedback</h3>
+    <p>If you email us, your message will contain your email address, device model, system version, and any logs or screenshots you choose to attach. We use it only to reply to you and improve the App. It is not shared with third parties and is not used for marketing.</p>
+    <h3>3.5 Links to other sites</h3>
+    <p>The App may link to other websites. Those sites are not operated by us; we do not control their content or privacy practices and accept no responsibility for them. Please review their policies.</p>
+
+    <h2>4. Data storage and retention</h2>
+    <p>Your photos, videos and settings are stored locally on your device (including the App’s own archive folder). We provide no cloud backup and no recycle bin: if you delete content inside the App or uninstall the App, that data may be permanently deleted and cannot be recovered. Please keep your own backups (for example, saving your work to the system photo library).</p>
+
+    <h2>5. Your rights</h2>
+    <p>Depending on your jurisdiction you may have the right to access, correct or delete your personal information, or to object to or restrict certain processing. Because the App has no account system and holds almost no information that identifies an individual, in most cases we neither hold nor can locate records for a specific person. For information you gave us directly (such as a feedback email), contact us below and we will handle your request within a reasonable time.</p>
+    <p>You may also stop any further retention at any time by turning off the relevant permission, clearing the App’s data, or uninstalling the App.</p>
+
+    <h2>6. Children’s privacy</h2>
+    <p>The App is suitable for users aged 4 and over. We do not knowingly collect personal information from children. If you are under 14, please read this policy with a parent or guardian before using the App. If we learn that we have collected information from a child by mistake, we will delete it promptly.</p>
+
+    <h2>7. Changes to this policy</h2>
+    <p>We may update this policy from time to time. The updated version is posted on this page and takes effect immediately; for material changes we will also notify you in the App. Please review this page periodically.</p>
+
+    <h2>8. Contact us</h2>
+    <p>Questions or suggestions about this policy are welcome by email:</p>
+    <p><a href="mailto:vnues.wgf@gmail.com">vnues.wgf@gmail.com</a></p>
+
+    <!-- TODO before publishing: replace with the legal entity name exactly as shown in App Store Connect -->
+    <p class="todo"><strong>TODO:</strong> Operating entity — [<span style="color:#a35b00">your legal name exactly as shown in App Store Connect</span>]; add a postal address if applicable.</p>
+  </div>
+
+  <div class="foot">Kabuda · <a href="../terms/">Terms of Use（用户协议）</a></div>
+</div>
+
+<script>
+(function () {
+  var nodes = Array.prototype.slice.call(document.querySelectorAll('[data-lang]'));
+  var buttons = Array.prototype.slice.call(document.querySelectorAll('[data-set]'));
+  function apply(lang) {
+    document.documentElement.lang = (lang === 'zh' ? 'zh-CN' : 'en');
+    nodes.forEach(function (n) { n.style.display = (n.getAttribute('data-lang') === lang) ? '' : 'none'; });
+    buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-set') === lang)); });
+  }
+  var q = (location.search.match(/lang=(zh|en)/) || [])[1];
+  var nav = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+  apply(q || (nav.indexOf('zh') === 0 ? 'zh' : 'en'));
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () { apply(b.getAttribute('data-set')); });
+  });
+})();
+</script>
+</body>
+</html>
