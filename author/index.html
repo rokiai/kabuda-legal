@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>作者信息 · Kabuda</title>
+<style>
+  :root { --fg:#1c1c1e; --muted:#6b6b70; --line:#e5e5ea; --bg:#fff; --accent:#fe8e1d; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 72px; }
+  h1 { font-size:26px; font-weight:600; margin:0 0 4px; }
+  h2 { font-size:19px; font-weight:600; margin:34px 0 10px; padding-top:18px; border-top:1px solid var(--line); }
+  p { margin:8px 0; }
+  .meta { color:var(--muted); font-size:14px; margin-bottom:24px; }
+  .card { padding:18px 20px; border:1px solid var(--line); border-radius:14px; background:#fafafa; }
+  .row { display:flex; gap:18px; padding:10px 0; border-bottom:1px solid var(--line); }
+  .row:last-child { border-bottom:0; }
+  .label { min-width:112px; color:var(--muted); }
+  a { color:#1a6fc4; }
+  .foot { margin-top:44px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+  [data-lang="en"] { display:none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div data-lang="zh">
+    <h1>作者信息</h1>
+    <div class="meta">Kabuda · 独立开发者</div>
+    <p>本页面提供 Kabuda 的作者与运营主体信息，方便用户联系、反馈问题或了解应用版权归属。</p>
+    <h2>作者与运营主体</h2>
+    <div class="card">
+      <div class="row"><div class="label">姓名</div><div><strong>王港锋</strong><br><span class="meta">GANGFENG WANG</span></div></div>
+      <div class="row"><div class="label">身份</div><div>个人开发者</div></div>
+      <div class="row"><div class="label">应用</div><div>Kabuda（iOS 相机应用）</div></div>
+      <div class="row"><div class="label">版权主体</div><div>© 2026 王港锋（GANGFENG WANG）</div></div>
+    </div>
+    <h2>联系作者</h2>
+    <p>如需反馈隐私、订阅、购买或应用使用问题，请发送邮件至：</p>
+    <p><a href="mailto:vnues.wgf@gmail.com">vnues.wgf@gmail.com</a></p>
+    <p>项目主页：<a href="https://github.com/rokiai" rel="noopener">github.com/rokiai</a></p>
+  </div>
+
+  <div data-lang="en">
+    <h1>About the Author</h1>
+    <div class="meta">Kabuda · Independent developer</div>
+    <p>This page provides the author and operating-entity information for Kabuda, so users can contact the developer, report issues, and identify the copyright holder.</p>
+    <h2>Author and operating entity</h2>
+    <div class="card">
+      <div class="row"><div class="label">Name</div><div><strong>GANGFENG WANG</strong><br><span class="meta">王港锋</span></div></div>
+      <div class="row"><div class="label">Role</div><div>Independent developer</div></div>
+      <div class="row"><div class="label">App</div><div>Kabuda, an iOS camera app</div></div>
+      <div class="row"><div class="label">Copyright</div><div>© 2026 GANGFENG WANG</div></div>
+    </div>
+    <h2>Contact</h2>
+    <p>For privacy, subscription, purchase, or app-support questions, email:</p>
+    <p><a href="mailto:vnues.wgf@gmail.com">vnues.wgf@gmail.com</a></p>
+    <p>Project page: <a href="https://github.com/rokiai" rel="noopener">github.com/rokiai</a></p>
+  </div>
+
+  <div class="foot">Kabuda · <a href="../privacy/">Privacy Policy（隐私政策）</a> · <a href="../terms/">Terms of Use（用户协议）</a></div>
+</div>
+<script>
+(function () {
+  var nodes = Array.prototype.slice.call(document.querySelectorAll('[data-lang]'));
+  var q = (location.search.match(/lang=(zh|en)/) || [])[1];
+  var nav = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+  var lang = q || (nav.indexOf('zh') === 0 ? 'zh' : 'en');
+  document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+  nodes.forEach(function (n) { n.style.display = n.getAttribute('data-lang') === lang ? 'block' : 'none'; });
+})();
+</script>
+</body>
+</html>
